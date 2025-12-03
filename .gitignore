@@ -1,0 +1,28 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+
+# --- Distribution / Build ---
+dist/
+build/
+*.egg-info/
+
+# --- Documentation ---
+site/
+
+# --- IDE Settings (VS Code, PyCharm) ---
+.vscode/
+.idea/
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- MyPy ---
+.mypy_cache/

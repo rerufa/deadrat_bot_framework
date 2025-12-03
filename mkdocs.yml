@@ -1,0 +1,44 @@
+site_name: DeadRat Bot Docs
+site_url: "" # Оставь пустым для локального просмотра или укажи реальный URL GitHub Pages
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+  features:
+    - content.code.copy
+    - navigation.expand
+
+# --- ВАЖНО: Отключаем папки, чтобы ссылки работали локально ---
+use_directory_urls: false
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list # Это нужно для работы кнопки {.md-button}
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          # --- ВАЖНО: Указываем, где лежит код ---
+          paths: [src]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            heading_level: 2
+            separate_signature: true
+
+nav:
+  - Быстрый старт: index.md
+  - Справочник API: reference.md

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deadrat"
+version = "0.1.0"
+description = "A Python wrapper for the DeadRat Bot API"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Rainy351", email = "rainy3510@gmail.com" },
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/username/deadrat-bot"
+Documentation = "https://username.github.io/deadrat-bot/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deadrat"]
