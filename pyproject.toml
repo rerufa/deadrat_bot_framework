@@ -17,8 +17,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/username/deadrat-bot"
-Documentation = "https://username.github.io/deadrat-bot/"
+Homepage = "https://github.com/rerufa/deadrat_bot_framework"
+Documentation = "https://github.com/rerufa/deadrat_bot_framework"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/deadrat"]
