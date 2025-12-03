@@ -16,13 +16,13 @@
 1. Скопируйте файл `framework.py` в папку вашего проекта.
 2. Установите зависимости:
    ```bash
-   pip install requests
+   pip install deadrat
    ```
 
 ## 🚀 Быстрый старт
 
 ```python
-from framework import Bot, Message
+from deadrat import Bot, Message
 
 bot = Bot("YOUR_API_KEY")
 
