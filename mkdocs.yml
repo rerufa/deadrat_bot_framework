@@ -1,5 +1,5 @@
 site_name: DeadRat Bot Docs
-site_url: "" # Оставь пустым для локального просмотра или укажи реальный URL GitHub Pages
+site_url: ""
 
 theme:
   name: material
@@ -10,7 +10,6 @@ theme:
     - content.code.copy
     - navigation.expand
 
-# --- ВАЖНО: Отключаем папки, чтобы ссылки работали локально ---
 use_directory_urls: false
 
 markdown_extensions:
@@ -21,7 +20,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - attr_list # Это нужно для работы кнопки {.md-button}
+  - attr_list
 
 plugins:
   - search
@@ -29,7 +28,6 @@ plugins:
       default_handler: python
       handlers:
         python:
-          # --- ВАЖНО: Указываем, где лежит код ---
           paths: [src]
           options:
             docstring_style: google
